@@ -1,10 +1,10 @@
-856292adc8b97a421eabd2e1f554bc7f *DESCRIPTION
+0d3476a2291fcb189a1745822b0d9e88 *DESCRIPTION
 161d91b00e17ea13f5115cadf479ef94 *NAMESPACE
-9e630b9181f2c5dab83cfebed0c849a9 *NEWS.md
-57ef0490f79ef1b6e81cef6da3977425 *R/crescent_kf.R
-38e20c2a91d56e6c9fc06f56420403bf *R/generate_filaments.R
+3c9845e4885bcf48486190774662b569 *NEWS.md
+cac4dc2c52f03e3d5375482feec08f1b *R/crescent_kf.R
+2cea69712aca5d69001f0633875952bc *R/generate_filaments.R
 7d8c3b1d38d5f9ad13f1d64f1bf3a0d9 *README.md
-38a092451b3f79632ca69f43fecc3714 *man/crescent_kf.Rd
+35a6f84e76f92e105c1def7dc6435df3 *man/crescent_kf.Rd
 fcf627d0e4b4b3a23c6a821923fb53cd *man/figures/logo.png
 d1505aa49718552b4b67af917f44cd6e *man/figures/logo_border.png
 a2d33da8b9e58884fd94e39031283d82 *man/generate_filaments.Rd

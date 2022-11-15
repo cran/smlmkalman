@@ -10,7 +10,7 @@ crescent_kf(x, p_length,
             B_s, d,
             Q, R,
             alpha, beta, gamma,
-            overwrite)
+            overwrite, verbose)
 }
 \arguments{
   \item{x}{
@@ -48,6 +48,9 @@ crescent_kf(x, p_length,
   }
   \item{overwrite}{
   A TRUE/FALSE statement which dictates whether or not, after z sampling, the error covariance matrix should be overwritten by the z sampling matrix (FALSE by default, when TRUE may cause unexpected errors/tracking paths!)
+  }
+  \item{verbose}{
+  A TRUE/FALSE statement that dictates whether the current place in the function loop should be printed to the terminal.
   }
 }
 

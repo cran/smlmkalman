@@ -271,8 +271,8 @@ for(i in 2:rep){
       a.back = a.priors - ((i-1)*divisions)
       b.back = b.priors - ((j-1)*divisions)
       #if the length from the intersect to start/end is greater than the backprop value, it is overwritten by this value
-      if(a.back > back_prop){a.back = back_prop}
-      if(b.back > back_prop){b.back = back_prop}
+      if(a.back > back_prop+1){a.back = back_prop}
+      if(b.back > back_prop+1){b.back = back_prop}
 
       a.index = (a.priors - a.back):(i*divisions)
       b.index = (b.priors - b.back):(j*divisions)
@@ -281,8 +281,8 @@ for(i in 2:rep){
       a.back = (i*divisions) - a.priors
       b.back = (j*divisions) - b.priors
 
-      if(a.back > back_prop){a.back = back_prop}
-      if(b.back > back_prop){b.back = back_prop}
+      if(a.back > back_prop+1){a.back = back_prop}
+      if(b.back > back_prop+1){b.back = back_prop}
 
       a.index = (((i-1)*divisions)+1):(a.priors + a.back)
       b.index = (((j-1)*divisions)+1):(b.priors + b.back)

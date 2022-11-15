@@ -8,7 +8,7 @@
 crescent_kf = function(x, p_length = 1000, x_hat_s = c(0,0), sigma_s = c(10,0,0,10),
                        B_s = 0, d = 1,
                        Q = c(1,0,0,1), R = c(10,0,0,10),
-                       alpha = 2,  beta = 30, gamma = 20, overwrite = F){
+                       alpha = 2,  beta = 30, gamma = 20, overwrite = F, verbose = T){
   data_mult = x
   rownames(data_mult) = NULL
 
@@ -106,7 +106,9 @@ crescent_kf = function(x, p_length = 1000, x_hat_s = c(0,0), sigma_s = c(10,0,0,
     index_tail = as.numeric(rownames(z_tail))
 
     #Print final value (k, number of expanses, elements in z_crescent)
-    cat("\r", "[", i, "]","{", track_expansion, "}","(", nrow(z_crescent),")", sep = "")
+    if(verbose == TRUE){
+      cat("\r", "[", i, "]","{", track_expansion, "}","(", nrow(z_crescent),")", sep = "")
+    }
 
     if(track_expansion >= propagation_limit){break}
   }
